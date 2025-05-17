@@ -1,0 +1,3 @@
+// Project settings file
+rootProject.name = 'cypherkey'
+include ':app'
