@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="royal_purple">#6A5ACD</color>
+    <color name="deep_indigo">#4B0082</color>
+    <color name="soft_gold">#D4AF37</color>
+    
+    <!-- Secondary Colors -->
+    <color name="calm_teal">#45B5AA</color>
+    <color name="warm_coral">#FF7F50</color>
+    <color name="sage_green">#9DC183</color>
+    
+    <!-- Neutral Colors -->
+    <color name="pure_white">#FFFFFF</color>
+    <color name="soft_cream">#F8F5F0</color>
+    <color name="light_gray">#E0E0E0</color>
+    <color name="medium_gray">#9E9E9E</color>
+    <color name="charcoal">#333333</color>
+    
+    <!-- Status Colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="alert_orange">#FF9800</color>
+    <color name="error_red">#F44336</color>
+    
+    <!-- Theme Colors -->
+    <color name="primary">@color/royal_purple</color>
+    <color name="primary_dark">@color/deep_indigo</color>
+    <color name="primary_light">#B39DDB</color>
+    <color name="accent">@color/soft_gold</color>
+    <color name="background">@color/pure_white</color>
+    <color name="surface">@color/pure_white</color>
+    <color name="error">@color/error_red</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">@color/charcoal</color>
+    <color name="text_secondary">@color/medium_gray</color>
+    <color name="text_on_primary">@color/pure_white</color>
+    <color name="text_on_accent">@color/charcoal</color>
+</resources>

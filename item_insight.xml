@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Elevate.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageInsight"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/warm_coral"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textInsightTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="How to build better habits in 21 days"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/text_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageInsight"
+            app:layout_constraintTop_toTopOf="@+id/imageInsight" />
+
+        <TextView
+            android:id="@+id/textInsightSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Article • 8 min read"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageInsight"
+            app:layout_constraintTop_toBottomOf="@+id/textInsightTitle" />
+
+        <TextView
+            android:id="@+id/textInsightCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/soft_cream"
+            android:paddingStart="8dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="2dp"
+            android:text="@string/productivity"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="@color/royal_purple"
+            app:layout_constraintStart_toEndOf="@+id/imageInsight"
+            app:layout_constraintTop_toBottomOf="@+id/textInsightSubtitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

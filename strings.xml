@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Elevate</string>
+    
+    <!-- Common -->
+    <string name="continue_text">Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    <string name="loading">Loading…</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="try_again">Try Again</string>
+    
+    <!-- Onboarding -->
+    <string name="welcome_to_elevate">Welcome to Elevate</string>
+    <string name="elevate_your_potential">Elevate Your Potential</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="onboarding_title_1">All Your Growth Tools</string>
+    <string name="onboarding_desc_1">Access productivity tools, insights, and entertainment in one beautiful experience</string>
+    <string name="onboarding_title_2">Personalized For You</string>
+    <string name="onboarding_desc_2">Discover content and tools tailored to your unique interests and goals</string>
+    <string name="onboarding_title_3">Join A Community</string>
+    <string name="onboarding_desc_3">Connect with like-minded individuals on their growth journey</string>
+    
+    <!-- Authentication -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or_sign_in_with">Or sign in with</string>
+    <string name="or_sign_up_with">Or sign up with</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+    <string name="dont_have_account">Don\'t have an account? Sign Up</string>
+    
+    <!-- Main Navigation -->
+    <string name="home">Home</string>
+    <string name="tools">Tools</string>
+    <string name="discover">Discover</string>
+    <string name="insights">Insights</string>
+    <string name="profile">Profile</string>
+    
+    <!-- Home -->
+    <string name="welcome_back">Welcome back, %1$s</string>
+    <string name="your_daily_recommendations">Your daily recommendations</string>
+    <string name="continue_your_progress">Continue your progress</string>
+    <string name="trending_in_community">Trending in community</string>
+    
+    <!-- Tools -->
+    <string name="all_tools">All</string>
+    <string name="productivity_tools">Productivity</string>
+    <string name="growth_tools">Growth</string>
+    <string name="finance_tools">Finance</string>
+    <string name="task_manager">Task Manager</string>
+    <string name="notes">Notes</string>
+    <string name="habit_tracker">Habit Tracker</string>
+    <string name="goal_setting">Goal Setting</string>
+    <string name="focus_timer">Focus Timer</string>
+    <string name="calendar">Calendar</string>
+    
+    <!-- Workflows -->
+    <string name="workflows">Workflows</string>
+    <string name="featured_workflows">Featured</string>
+    <string name="my_workflows">My Workflows</string>
+    <string name="browse_workflows">Browse</string>
+    <string name="start_workflow">Start Workflow</string>
+    <string name="steps">Steps</string>
+    <string name="minutes">minutes</string>
+    
+    <!-- Insights -->
+    <string name="for_you">For You</string>
+    <string name="trending">Trending</string>
+    <string name="saved">Saved</string>
+    <string name="article">Article</string>
+    <string name="video">Video</string>
+    <string name="min_read">%1$d min read</string>
+    
+    <!-- Discover -->
+    <string name="recommended_for_you">Recommended for you</string>
+    <string name="new_this_week">New this week</string>
+    <string name="popular_in_community">Popular in community</string>
+    <string name="tool">Tool</string>
+    <string name="workflow">Workflow</string>
+    <string name="live_event">Live event</string>
+    <string name="discussion">Discussion</string>
+    
+    <!-- Entertainment -->
+    <string name="entertainment">Entertainment</string>
+    <string name="videos">Videos</string>
+    <string name="audio">Audio</string>
+    <string name="interactive">Interactive</string>
+    
+    <!-- Community -->
+    <string name="community">Community</string>
+    <string name="feed">Feed</string>
+    <string name="groups">Groups</string>
+    <string name="events">Events</string>
+    <string name="comments">comments</string>
+    <string name="started_by">Started by %1$s</string>
+    
+    <!-- Profile -->
+    <string name="my_progress">My Progress</string>
+    <string name="saved_items">Saved Items</string>
+    <string name="notifications">Notifications</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="subscription">Subscription</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="log_out">Log Out</string>
+    
+    <!-- Membership Tiers -->
+    <string name="choose_your_plan">Choose Your Plan</string>
+    <string name="essentials">Essentials</string>
+    <string name="plus">Plus</string>
+    <string name="pro">Pro</string>
+    <string name="elite">Elite</string>
+    <string name="free">Free</string>
+    <string name="current">Current</string>
+    <string name="select">Select</string>
+    <string name="monthly_price">$%1$.2f/mo</string>
+    <string name="yearly_price">$%1$.2f/year</string>
+    <string name="change_plan_anytime">You can change your plan anytime</string>
+    <string name="upgrade_your_plan">Upgrade Your Plan</string>
+    
+    <!-- Features -->
+    <string name="basic_tools">Basic tools &amp; workflows</string>
+    <string name="advanced_tools">Advanced tools &amp; workflows</string>
+    <string name="premium_tools">Premium tools &amp; workflows</string>
+    <string name="limited_community">Limited community access</string>
+    <string name="full_community">Full community access</string>
+    <string name="complete">complete</string>
+</resources>

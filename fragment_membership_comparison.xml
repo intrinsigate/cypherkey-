@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp">
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/membership_comparison"
+            android:textAppearance="?attr/textAppearanceHeadline2"
+            android:textColor="@color/text_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBack" />
+
+        <TextView
+            android:id="@+id/textSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/comparison_description"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSubtitle">
+
+            <TableLayout
+                android:id="@+id/tableComparison"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:stretchColumns="*">
+
+                <!-- Header Row -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/royal_purple"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/features"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/pure_white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/essentials"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/pure_white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/plus"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/pure_white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/pro"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/pure_white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/elite"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/pure_white"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Feature Row 1: Tools -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/surface"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/productivity_tools"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_primary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/basic"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/advanced"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/premium"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/premium"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+                </TableRow>
+
+                <!-- Feature Row 2: Workflows -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/workflows"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_primary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/limited"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/standard"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/advanced"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/custom"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+                </TableRow>
+
+                <!-- Feature Row 3: Insights -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/surface"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/insights_content"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_primary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/basic"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/standard"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/premium"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/exclusive"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+                </TableRow>
+
+                <!-- Feature Row 4: AI Features -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/ai_features"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_primary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/none"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/basic"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/advanced"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/unlimited"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+                </TableRow>
+
+                <!-- Feature Row 5: Community -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/surface"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/community_access"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_primary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/read_only"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/standard"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/premium"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/vip"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+                </TableRow>
+
+                <!-- Feature Row 6: Support -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/support"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_primary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/email"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/email_chat"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/priority"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/dedicated"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/text_secondary" />
+                </TableRow>
+
+                <!-- Price Row -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/soft_cream"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/monthly_price"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/free"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/price_plus_short"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/price_pro_short"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/price_elite_short"
+                        android:textAppearance="?attr/textAppearanceBody1"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/buttonUpgradeNow"
+            style="@style/Widget.Elevate.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/upgrade_now"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
